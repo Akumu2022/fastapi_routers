@@ -1,8 +1,8 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List,Optional
 from .item import Item
 
 class Order(BaseModel):
     id: int
     user_id: int
-    items: List[Item]
+    # items:Optional [List[Item]] = None
